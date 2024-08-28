@@ -1,0 +1,26 @@
+// **********************************
+// Css para el resultado
+// **********************************
+
+.result-calc {
+    height: 90px;
+    background: var(--colorscreenbackground);
+    border-radius: $borderradioscard;
+    display: flex;
+    place-items: center;
+    justify-content: flex-end;
+    
+    .text-resultcalc {
+        color: var(--colorVerydarkgrayishblue);
+        background: var(--colorscreenbackground);
+        border: none;
+        font-size: $fontsizenumbers;
+        font-weight: 700;
+        text-align: end;
+        height: 60%;
+        width: 95%;
+        padding: 0 10px;
+        overflow-x: auto;
+        margin: 0 auto;
+    }
+}

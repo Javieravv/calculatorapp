@@ -1,0 +1,61 @@
+// *******************************************
+// Estilos para el Header de la calculadora
+// *******************************************
+
+.header-calc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    color: var(--colorVerydarkgrayishblue);
+    // border: 1px solid red;
+
+    h2 {
+        font-size: 2rem;
+        align-items: flex-start;
+    }
+
+    .header-text {
+        text-transform: uppercase;
+        font-weight: bold;
+        align-self: flex-end;
+        text-align: end;
+        padding-right: 15px;
+        font-size: 1.2rem;
+        flex: 1;
+    }
+
+    .header-themes {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        height: 100%;
+        
+        // gap: 4px;
+
+        div {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 8px;
+            padding: 4px 10px;
+
+            p {
+                font-weight: bold;
+                text-align: center;
+            }
+            
+            &:last-child {
+                background-color: var(--colortogglebackground);
+                border-radius: 25px;
+            }
+        }
+
+        input[type=radio] {
+            accent-color: var(--colorRedkeytoggle);
+            width:  20px;
+            height: 20px;
+        }
+    }
+}
+
+

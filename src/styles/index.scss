@@ -1,0 +1,38 @@
+@import './variables';
+@import './header';
+@import './result';
+@import './keyscalc';
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+
+:root {}
+
+::before,
+::after,
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    background: var(--colormainbackground);
+}
+
+// *****************************
+// Container de la calculadora
+// *****************************
+
+.calculator-container {
+    width: min(95%, 500px);
+    margin: 25px auto;
+    min-height: 50vh;
+    padding: 25px;
+    background: var(--colormainbackground);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

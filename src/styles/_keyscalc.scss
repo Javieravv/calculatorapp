@@ -1,0 +1,72 @@
+// **********************************
+// Css para las teclas de la calculadora
+// **********************************
+
+.keys-calc {
+    display: flex;
+    flex-direction: column;
+    gap: $gapkeys;
+    background: var(--colorscreenbackground);
+    border-radius: $borderradioscard;
+    padding: 25px 25px; 
+}
+
+.keys__values {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: $gapkeys;
+}
+
+.key {
+    background: var(--colorLightgrayishorangekeybackground);
+    height: $keyheigh;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.key__value{
+    // color: var(--colorVerydarkgrayishblue);
+    color: var(--colorKey);
+    font-size: $fontsizenumbers;
+    font-weight: 700;
+    box-shadow: 2px 1px 1px --var(--colorGrayishorangekeyshadow);
+}
+
+.key__del{
+    background: var(--colorkeybackground);
+    color: var(--colorWhite);
+    font-weight: bolder;
+    font-size: 1.2rem;
+    box-shadow: 3px 3px 2px var(--colorkeybackground);
+}
+
+.keys__buttons{
+    display: grid;
+    color: white;
+    gap: $gapkeys;
+    grid-template-columns: 1fr 1fr;
+}
+
+.keybutton {
+    height: $keyheigh;
+    border-radius: 5px;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.key-reset{
+    background: var(--colorkeybackground);
+    box-shadow: 1px 3px 0px 0px var(--colorkeybackground);
+}
+
+.key-equal{
+    background: var(--colorRedkeybackground);
+    box-shadow: 1px 3px 0px 0px var(--colorRedkeybackground);
+}
